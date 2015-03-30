@@ -149,7 +149,7 @@
 </script>
 
 <div class="animation" align="center">
-    <img id="anim_img_{{ ID }}">
+    <img id="anim_img_{{ ID }}" {% if style %} style="{{ style }}" {% endif %}>
     <br>
     <input id="anim_frame_slider_{{ ID }}" type="range" style="width:350px" name="points" min="0" max="1" step="1" value="0" oninput="anim_{{ ID }}.set_frame(parseInt(this.value));"></input>
     <br>
