@@ -1,17 +1,18 @@
 <script language="javascript">
 
-  /* ======================================================================== */
-  /*  Copied and adpated from https://github.com/jakevdp/JSAnimation          */
-  /*  Thanks to Jake Vanderplas                                               */
-  /*  Changes:                                                                */
-  /*    - now defined as a jinja2 template with variables:                    */
-  /*             - listFrames                                                 */
-  /*             - interval                                                   */
-  /*    - now has embedded icons as base64 png images                         */
-  /*    - anim_frame_slider onchange --> oninput event                        */
-  /*                                                                          */
-  /*   Patrick Brockmann - https://github.com/PBrockmann                      */
-  /* ======================================================================== */
+  /* ===================================================================================== */
+  /*  Copied and adpated from https://github.com/jakevdp/JSAnimation                       */
+  /*  Thanks to Jake Vanderplas                                                            */
+  /*  Changes:                                                                             */
+  /*    - now defined as a jinja2 template with variables:                                 */
+  /*             - listFrames                                                              */
+  /*             - interval                                                                */
+  /*             - style                                                                   */
+  /*    - now has embedded icons as base64 png images                                      */
+  /*    - anim_frame_slider onchange --> oninput event                                     */
+  /*                                                                                       */
+  /*   Patrick Brockmann - https://github.com/PBrockmann/ipython_animation_javascript_tool */
+  /* ===================================================================================== */
 
   /* Define the Animation class */
   function Animation(frames, img_id, slider_id, loop_select_id){
